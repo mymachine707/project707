@@ -21,5 +21,23 @@ func Signnumbers(num string) bool {
 	}
 
 	return negative
+}
 
+func SignValidation(sign string) string {
+	var answer string
+	switch sign {
+	case "+":
+		answer = sign
+	case "-":
+		answer = sign
+	case "*":
+		answer = sign
+	case "/":
+		answer = sign
+	case "%":
+		answer = sign
+	default:
+		panic("This sign is not defined!")
+	}
+	return answer
 }
