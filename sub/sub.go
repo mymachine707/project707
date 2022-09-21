@@ -3,6 +3,7 @@ package sub
 import (
 	"fmt"
 	"project/converter"
+	"project/sign"
 	"strings"
 )
 
@@ -17,30 +18,14 @@ func Minus(num1, num2 string) string {
 
 	var s []string
 	var y int
+
 	var e int // a katta b dan
 	var c int // a kichik b dan
-	// qaysi son kattaligini tekshirish kerak
-	if len(a) > len(b) {
-		// a katta b dan
-		e += 1
-	} else if len(a) < len(b) {
-		// a kichik b dan
-		c += 1
-	} else if len(a) == len(b) {
-		// a teng b ga
-		for i := 0; i < len(a); i++ {
-			if a[i] > b[i] {
-				// a katta b dan
-				e += 1
-				break
-			} else if a[i] < b[i] {
-				// a kichik b dan
-				c += 1
-				break
-			}
 
-		}
-
+	if sign.Findtobig(num1, num2) == 1 {
+		e = 1
+	} else if sign.Findtobig(num1, num2) == 2 {
+		c = 1
 	}
 
 	// slicelarni bir biriga tenglashtirish jarayoni bu kod o'zgartirilmasin

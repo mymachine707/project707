@@ -14,7 +14,7 @@ func Set(num1 string) string {
 		b = a[1:]
 	} else if a[0] == "-" {
 		b = a[1:]
-	} else if isnumber.Isnumber((a[0])) {
+	} else if isnumber.IsnumberStr((a[0])) {
 		b = a
 	} else {
 		panic("This string is not a number!")

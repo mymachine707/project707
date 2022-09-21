@@ -14,12 +14,12 @@ func Clean(num string) string {
 		a = a[1:]
 	} else if a[0] == "-" {
 		a = a[1:]
-	} else if !isnumber.Isnumber(a[0]) {
+	} else if !isnumber.IsnumberStr(a[0]) {
 		panic("This string is not a number!")
 	}
-
+	// o'zgartirish kiritish kerak!
 	for i := 1; i < len(a); i++ {
-		if !isnumber.Isnumber(a[i]) {
+		if !isnumber.IsnumberStr(a[i]) {
 			panic("This string is not a number!")
 		}
 	}

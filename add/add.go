@@ -31,6 +31,7 @@ func Add(num1, num2 string) string {
 		s = nil
 	}
 
+
 	//stringlarni slice holatida har bir elementini qo'shib yangi slice hosil qilish
 
 	var answer string // javobni ansverga biriktirish
