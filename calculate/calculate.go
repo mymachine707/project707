@@ -17,7 +17,7 @@ func main() {
 	fmt.Printf("%s", "\tEntered number 2: ")
 	fmt.Scanf("%s", &num2)
 
-	fmt.Printf("%s", "\tEntered sign to calculate: ")
+	fmt.Printf("%s", "\t\nEntered sign to calculate: ")
 	fmt.Scanf("%s", &signs)
 
 	// step-1: validation
@@ -52,6 +52,8 @@ func main() {
 	case "%":
 		fmt.Println("%")
 		// step-7: qoldiqni hisoblash
+	default:
+		panic("This sign is not defined")
 	}
 
 }
