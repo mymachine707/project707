@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func Set(num1 string) string {
+func Modul(num1 string) string {
 
 	a := strings.Split(num1, "")
 

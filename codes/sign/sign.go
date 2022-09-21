@@ -44,7 +44,7 @@ func SignValidation(sign string) string {
 
 func AddtoMinus(num string) string {
 	var b []string
-	b[0] = "-"
+	b = append(b, "-")
 	b = append(b, num)
 	var answer string
 	for i := 0; i < len(b); i++ {
